@@ -80,8 +80,13 @@ def getEmpty (Board: list) :
             if Board[i][j] == 0 :
                 return (i,j) #row,column
     return None
-print("Board :")
-showBoard(board)
-solver(board)
-print("solve :")
-showBoard(board)
+
+def main():
+    print("Board :")
+    showBoard(board)
+    solver(board)
+    print("solve :")
+    showBoard(board)
+
+if __name__ == "__main__":
+    main()
